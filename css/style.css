@@ -1,0 +1,158 @@
+@font-face {
+  font-family: PfdintextproThin;
+  src: url(../font/PfdintextproThin.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: PfdintextproThin, sans-serif;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 15px 40px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 15px 20px;
+  }
+}
+
+.go-up {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .go-up {
+    flex-direction: column;
+  }
+}
+
+.price {
+  width: 400px;
+  border: 3px solid #e3e3e3;
+  border-radius: 5px;
+  margin-left: 80px;
+  padding: 20px 30px;
+}
+
+.text-direction-underline {
+  text-decoration: underline;
+}
+
+.btn-green {
+  border: 0;
+  background: #57a960;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-green:hover {
+  background: #4aaf53;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.def-checkbox:hover span {
+  border: 2px solid #c7c7c7;
+}
+.def-checkbox span {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
+  margin-right: 10px;
+  position: relative;
+  transition: 0.3s;
+  display: inline-block;
+}
+.def-checkbox span:after {
+  content: "";
+  left: 11px;
+  top: 7px;
+  width: 5px;
+  min-width: 5px;
+  height: 10px;
+  border: solid #57a960;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  display: none;
+}
+.def-checkbox input {
+  display: none;
+}
+.def-checkbox input:checked ~ span:after {
+  display: block;
+}
+
+.def-input input {
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
+  margin-right: 10px;
+  position: relative;
+  transition: 0.3s;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+}
+.def-input input:focus {
+  border: 2px solid #c7c7c7;
+}
+
+.def-radio input {
+  appearance: none;
+  background-color: #fff;
+  color: #4aaf53;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e3e3e3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.def-radio input::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #4aaf53;
+  display: block;
+}
+.def-radio input:checked::before {
+  transform: scale(1);
+}
+
+/*# sourceMappingURL=style.css.map */
