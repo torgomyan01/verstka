@@ -50,6 +50,11 @@ p {
   margin-left: 80px;
   padding: 20px 30px;
 }
+@media (max-width: 430px) {
+  .price {
+    width: 100%;
+  }
+}
 
 .text-direction-underline {
   text-decoration: underline;
@@ -153,6 +158,26 @@ p {
 }
 .def-radio input:checked::before {
   transform: scale(1);
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .flex-md-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .d-md-block {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

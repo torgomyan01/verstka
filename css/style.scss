@@ -48,6 +48,9 @@ p{
   margin-left: 80px;
   padding: 20px 30px;
 
+  @media (max-width: 430px) {
+    width: 100%;
+  }
 }
 
 
@@ -167,6 +170,26 @@ p{
     &:checked::before {
       transform: scale(1);
     }
+  }
+}
+
+.d-none {
+  display: none
+}
+
+.flex-column {
+  flex-direction: column
+}
+
+.flex-md-row {
+  @media (min-width: 768px){
+    flex-direction: row
+  }
+}
+
+.d-md-block {
+  @media (min-width: 768px){
+    display: block;
   }
 }
 
